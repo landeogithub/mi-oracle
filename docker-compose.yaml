@@ -11,10 +11,12 @@ services:
     ports:
       - "1521:1521"
     volumes:
-      - oracle_data:/opt/oracle/oradata
+      # - oracle_data:/opt/oracle/oradata
+      # - ../../mis-archivos/oracle-data:/opt/oracle/oradata   # datos de la BD
+      - /home/lalvarezl/mis-archivos/oracle-data:/opt/oracle/oradata
     environment:
       ORACLE_PWD: 1234
 
-volumes:
-  oracle_data:
-    name: oracle_data
+#volumes:
+#  oracle_data:
+#    name: oracle_data
