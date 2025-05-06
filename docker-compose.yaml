@@ -4,7 +4,7 @@
 
 services:
   dat_service:
-    image: container-registry.oracle.com/database/free:latest
+    image: lalvarezl/oracle-23ai-free:laal
     # indica que NUNCA intente bajar (pull) la imagen
     pull_policy: never
     container_name: mi-oracle
